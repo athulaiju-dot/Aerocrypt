@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="theme-color" content="#0ea5e9" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Aerocrypt | Cybersecurity & Cryptography Solutions</title>
+  <meta name="title" content="Aerocrypt | Cybersecurity & Cryptography Solutions" />
+  <meta name="description" content="Advanced cybersecurity solutions focused on privacy, encryption, and innovation. Aerocrypt offers cryptographic systems, ethical hacking, and secure development." />
+  <meta name="keywords" content="Aerocrypt, cybersecurity startup, cryptography company, ethical hacking, secure systems, Athul Laiju, privacy technology, encryption, threat analysis" />
+  <meta name="author" content="Athul Laiju" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://aerocrypt.io" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aerocrypt.io" />
+  <meta property="og:title" content="Aerocrypt | Cybersecurity & Cryptography Solutions" />
+  <meta property="og:description" content="Securing digital identity through intelligent cryptographic systems." />
+  <meta property="og:site_name" content="Aerocrypt" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://aerocrypt.io" />
+  <meta name="twitter:title" content="Aerocrypt | Cybersecurity & Cryptography Solutions" />
+  <meta name="twitter:description" content="Securing digital identity through intelligent cryptographic systems." />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Aerocrypt",
+    "url": "https://aerocrypt.io",
+    "logo": "https://aerocrypt.io/logo.png",
+    "description": "Advanced cybersecurity solutions focused on privacy, encryption, and innovation. Aerocrypt specializes in cryptographic systems, ethical hacking, and secure application development.",
+    "founder": {
+      "@type": "Person",
+      "name": "Athul Laiju",
+      "jobTitle": "Founder & Cybersecurity Engineer",
+      "description": "Athul Laiju is a cybersecurity engineer and founder of Aerocrypt, specializing in ethical hacking, cryptography, secure systems design, and privacy-centric technology."
+    },
+    "sameAs": [
+      "https://linkedin.com/company/aerocrypt",
+      "https://twitter.com/aerocrypt"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@aerocrypt.io",
+      "contactType": "customer service"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Athul Laiju",
+    "jobTitle": "Founder & Cybersecurity Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Aerocrypt"
+    },
+    "description": "Athul Laiju is a cybersecurity engineer and founder of Aerocrypt. He specializes in ethical hacking, cryptography, secure systems design, and privacy-centric technology. With a strong background in computer science and cybersecurity, he focuses on building intelligent, secure, and scalable digital solutions.",
+    "knowsAbout": ["Cybersecurity", "Cryptography", "Ethical Hacking", "Secure Systems Design", "Privacy Technology"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Aerocrypt",
+    "url": "https://aerocrypt.io",
+    "description": "Aerocrypt - Securing Digital Identity Through Intelligent Cryptographic Systems"
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== CSS Reset & Base ===== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      /* Core dark theme - cybersecurity aesthetic */
+      --background: hsl(222, 47%, 5%);
+      --foreground: hsl(210, 40%, 98%);
+      --card: hsl(222, 47%, 8%);
+      --card-foreground: hsl(210, 40%, 98%);
+      --primary: hsl(199, 89%, 48%);
+      --primary-foreground: hsl(222, 47%, 5%);
+      --secondary: hsl(222, 47%, 12%);
+      --secondary-foreground: hsl(210, 40%, 98%);
+      --muted: hsl(222, 30%, 15%);
+      --muted-foreground: hsl(215, 20%, 55%);
+      --accent: hsl(187, 92%, 48%);
+      --accent-foreground: hsl(222, 47%, 5%);
+      --border: hsl(222, 30%, 18%);
+      --ring: hsl(199, 89%, 48%);
+      --radius: 0.75rem;
+      --grid-color: hsla(222, 30%, 15%, 0.5);
+      --shadow-glow: 0 0 40px hsla(199, 89%, 48%, 0.15);
+      --shadow-glow-lg: 0 0 80px hsla(199, 89%, 48%, 0.2);
+      --gradient-cyber: linear-gradient(135deg, hsl(199, 89%, 48%) 0%, hsl(187, 92%, 48%) 100%);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: var(--background);
+      color: var(--foreground);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ===== Typography ===== */
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .text-gradient {
+      background: var(--gradient-cyber);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ===== Layout ===== */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ===== Utilities ===== */
+    .text-center { text-align: center; }
+    .text-left { text-align: left; }
+    .text-muted { color: var(--muted-foreground); }
+    .text-primary { color: var(--primary); }
+    .text-accent { color: var(--accent); }
+
+    /* ===== Background Effects ===== */
+    .cyber-grid {
+      background-image: 
+        linear-gradient(var(--grid-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.4;
+      animation: float 20s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    .orb-primary { background: var(--primary); }
+    .orb-accent { background: var(--accent); }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(30px, -30px) scale(1.1); }
+      66% { transform: translate(-20px, 20px) scale(0.9); }
+    }
+
+    /* ===== Animations ===== */
+    @keyframes fade-in-up {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-up {
+      animation: fade-in-up 0.8s ease-out forwards;
+    }
+
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-400 { animation-delay: 0.4s; }
+    .delay-600 { animation-delay: 0.6s; }
+
+    /* ===== Buttons ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.875rem 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn-cyber {
+      background: var(--gradient-cyber);
+      color: var(--primary-foreground);
+    }
+
+    .btn-cyber:hover {
+      box-shadow: var(--shadow-glow-lg);
+      transform: scale(1.05);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+    }
+
+    .btn-outline:hover {
+      background: hsla(199, 89%, 48%, 0.1);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .btn-sm {
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+    }
+
+    /* ===== Header ===== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: hsla(222, 47%, 5%, 0.8);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 0.5rem;
+      background: var(--gradient-cyber);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .logo:hover .logo-icon {
+      box-shadow: var(--shadow-glow);
+    }
+
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .nav {
+      display: none;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .nav { display: flex; }
+      .mobile-menu-btn { display: none !important; }
+    }
+
+    .nav-link {
+      color: var(--muted-foreground);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--primary);
+    }
+
+    .mobile-menu-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: none;
+      border: none;
+      color: var(--foreground);
+      cursor: pointer;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 5rem;
+      left: 0;
+      right: 0;
+      background: hsla(222, 47%, 5%, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem;
+    }
+
+    .mobile-menu.active {
+      display: block;
+    }
+
+    .mobile-menu a {
+      display: block;
+      padding: 0.75rem 0;
+      color: var(--foreground);
+      font-weight: 500;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 6rem 0 4rem;
+    }
+
+    .hero .orb:nth-child(1) {
+      width: 24rem;
+      height: 24rem;
+      top: -12rem;
+      left: -12rem;
+    }
+
+    .hero .orb:nth-child(2) {
+      width: 20rem;
+      height: 20rem;
+      top: 50%;
+      right: -10rem;
+      animation-delay: 0.4s;
+    }
+
+    .hero .orb:nth-child(3) {
+      width: 16rem;
+      height: 16rem;
+      bottom: 5rem;
+      left: 25%;
+      animation-delay: 0.6s;
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      opacity: 0.3;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      max-width: 1000px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      border: 1px solid hsla(199, 89%, 48%, 0.3);
+      background: hsla(199, 89%, 48%, 0.05);
+      margin-bottom: 2rem;
+    }
+
+    .hero-badge span {
+      font-size: 0.875rem;
+      color: var(--primary);
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+    }
+
+    .hero-subtitle {
+      font-size: 1.125rem;
+      color: var(--muted-foreground);
+      max-width: 700px;
+      margin: 0 auto 3rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    @media (min-width: 640px) {
+      .hero-buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    .hero-fade {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 8rem;
+      background: linear-gradient(to top, var(--background), transparent);
+    }
+
+    /* ===== Section Styles ===== */
+    section {
+      position: relative;
+      padding: 6rem 0;
+      overflow: hidden;
+    }
+
+    .section-label {
+      color: var(--primary);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .section-title {
+      font-size: clamp(1.875rem, 4vw, 3rem);
+      font-weight: 700;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-desc {
+      font-size: 1.125rem;
+      color: var(--muted-foreground);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .section-bg {
+      background: hsla(222, 47%, 12%, 0.2);
+    }
+
+    /* ===== About Section ===== */
+    .about-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50rem;
+      height: 50rem;
+      background: hsla(199, 89%, 48%, 0.05);
+      border-radius: 50%;
+      filter: blur(60px);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 4rem;
+    }
+
+    @media (min-width: 768px) {
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .feature-card {
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      background: hsla(222, 47%, 8%, 0.5);
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      border-color: hsla(199, 89%, 48%, 0.5);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .feature-icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.5rem;
+      background: hsla(199, 89%, 48%, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .feature-card:hover .feature-icon {
+      background: hsla(199, 89%, 48%, 0.2);
+    }
+
+    .feature-icon svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      color: var(--primary);
+    }
+
+    .feature-card h3 {
+      font-size: 1.125rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-card p {
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+    }
+
+    /* ===== Services Section ===== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+
+    @media (min-width: 768px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .service-card {
+      position: relative;
+      padding: 2rem;
+      border-radius: var(--radius);
+      background: var(--card);
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      padding: 1px;
+      background: var(--gradient-cyber);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      border-radius: inherit;
+      pointer-events: none;
+    }
+
+    .service-glow {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 8rem;
+      height: 8rem;
+      background: hsla(199, 89%, 48%, 0.05);
+      border-radius: 50%;
+      filter: blur(40px);
+      transform: translate(50%, -50%);
+      transition: background 0.3s ease;
+    }
+
+    .service-card:hover .service-glow {
+      background: hsla(199, 89%, 48%, 0.1);
+    }
+
+    .service-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, hsla(199, 89%, 48%, 0.2), hsla(187, 92%, 48%, 0.2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover .service-icon {
+      transform: scale(1.1);
+    }
+
+    .service-icon svg {
+      width: 1.75rem;
+      height: 1.75rem;
+      color: var(--primary);
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .service-card p {
+      color: var(--muted-foreground);
+    }
+
+    /* ===== Founder Section ===== */
+    .founder-orb-1 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 24rem;
+      height: 24rem;
+      background: hsla(187, 92%, 48%, 0.1);
+      border-radius: 50%;
+      filter: blur(60px);
+    }
+
+    .founder-orb-2 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 24rem;
+      height: 24rem;
+      background: hsla(199, 89%, 48%, 0.1);
+      border-radius: 50%;
+      filter: blur(60px);
+    }
+
+    .founder-card {
+      position: relative;
+      max-width: 56rem;
+      margin: 0 auto;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    .founder-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      padding: 1px;
+      background: var(--gradient-cyber);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      border-radius: inherit;
+      pointer-events: none;
+    }
+
+    .founder-inner {
+      padding: 2rem;
+      background: hsla(222, 47%, 8%, 0.8);
+      backdrop-filter: blur(8px);
+    }
+
+    @media (min-width: 768px) {
+      .founder-inner {
+        padding: 3rem;
+      }
+    }
+
+    .founder-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .founder-content {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+    }
+
+    .founder-photo-wrapper {
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .founder-photo {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: var(--shadow-glow);
+      border: 2px solid hsla(199, 89%, 48%, 0.3);
+    }
+
+    .founder-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .founder-badge {
+      position: absolute;
+      bottom: -0.5rem;
+      right: -0.5rem;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.5rem;
+      background: var(--card);
+      border: 1px solid var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .founder-badge span {
+      font-size: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--primary);
+    }
+
+    .founder-info {
+      flex: 1;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .founder-info {
+        text-align: left;
+      }
+    }
+
+    .founder-info h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .founder-info h3 {
+        font-size: 1.875rem;
+      }
+    }
+
+    .founder-title {
+      color: var(--primary);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .founder-bio {
+      color: var(--muted-foreground);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .founder-social {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .founder-social {
+        justify-content: flex-start;
+      }
+    }
+
+    .social-link {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 0.5rem;
+      background: var(--secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .social-link:hover {
+      background: hsla(199, 89%, 48%, 0.2);
+      color: var(--primary);
+    }
+
+    .social-link svg {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    /* ===== Mission Section ===== */
+    .mission-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+
+    @media (min-width: 768px) {
+      .mission-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .mission-card {
+      position: relative;
+      padding: 2rem;
+      border-radius: 1rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: all 0.5s ease;
+    }
+
+    @media (min-width: 1024px) {
+      .mission-card {
+        padding: 2.5rem;
+      }
+    }
+
+    .mission-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, hsla(199, 89%, 48%, 0.2), transparent);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .mission-card:hover::after {
+      opacity: 1;
+    }
+
+    .mission-icon {
+      position: relative;
+      z-index: 1;
+      width: 4rem;
+      height: 4rem;
+      border-radius: var(--radius);
+      background: hsla(199, 89%, 48%, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .mission-card:nth-child(2) .mission-icon {
+      background: hsla(187, 92%, 48%, 0.1);
+    }
+
+    .mission-icon svg {
+      width: 2rem;
+      height: 2rem;
+      color: var(--primary);
+    }
+
+    .mission-card:nth-child(2) .mission-icon svg {
+      color: var(--accent);
+    }
+
+    .mission-card h3 {
+      position: relative;
+      z-index: 1;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .mission-card h3 {
+        font-size: 1.875rem;
+      }
+    }
+
+    .mission-card p {
+      position: relative;
+      z-index: 1;
+      color: var(--muted-foreground);
+      font-size: 1.125rem;
+      line-height: 1.7;
+    }
+
+    /* ===== Contact Section ===== */
+    .contact-orb-1 {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      width: 16rem;
+      height: 16rem;
+      background: hsla(199, 89%, 48%, 0.1);
+      border-radius: 50%;
+      filter: blur(60px);
+    }
+
+    .contact-orb-2 {
+      position: absolute;
+      bottom: 25%;
+      right: 25%;
+      width: 16rem;
+      height: 16rem;
+      background: hsla(187, 92%, 48%, 0.1);
+      border-radius: 50%;
+      filter: blur(60px);
+    }
+
+    .contact-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      max-width: 48rem;
+      margin: 4rem auto 0;
+    }
+
+    @media (min-width: 768px) {
+      .contact-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .contact-card {
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .contact-card:hover {
+      border-color: hsla(199, 89%, 48%, 0.5);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .contact-card-inner {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .contact-icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.5rem;
+      background: hsla(199, 89%, 48%, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background 0.3s ease;
+    }
+
+    .contact-card:hover .contact-icon {
+      background: hsla(199, 89%, 48%, 0.2);
+    }
+
+    .contact-icon svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      color: var(--primary);
+    }
+
+    .contact-card:nth-child(2) .contact-icon {
+      background: hsla(187, 92%, 48%, 0.1);
+    }
+
+    .contact-card:nth-child(2) .contact-icon svg {
+      color: var(--accent);
+    }
+
+    .contact-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-card p {
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+    }
+
+    .contact-social {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .contact-social p {
+      color: var(--muted-foreground);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .contact-social-link {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .contact-social-link:hover {
+      border-color: hsla(199, 89%, 48%, 0.5);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .contact-social-link svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      color: var(--muted-foreground);
+      transition: color 0.3s ease;
+    }
+
+    .contact-social-link:hover svg {
+      color: var(--primary);
+    }
+
+    .contact-cta {
+      margin-top: 4rem;
+      text-align: center;
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      background: var(--card);
+      border-top: 1px solid var(--border);
+      padding: 3rem 0;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-brand {
+        align-items: flex-start;
+      }
+    }
+
+    .footer-tagline {
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+      text-align: center;
+      max-width: 20rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-tagline {
+        text-align: left;
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .footer-link {
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+      transition: color 0.3s ease;
+    }
+
+    .footer-link:hover {
+      color: var(--primary);
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .footer-bottom {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    @media (min-width: 640px) {
+      .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .footer-bottom p {
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+    }
+
+    .footer-bottom .font-mono {
+      font-size: 0.75rem;
+    }
+
+    /* ===== SVG Icons ===== */
+    .icon {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      stroke-width: 0;
+      stroke: currentColor;
+      fill: currentColor;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="container header-content">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <span class="logo-text">Aerocrypt</span>
+      </a>
+      
+      <div class="nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#founder" class="nav-link">Founder</a>
+        <a href="#mission" class="nav-link">Mission</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="btn btn-cyber btn-sm">Get Started</a>
+      </div>
+      
+      <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </nav>
+    
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" onclick="toggleMenu()">About</a>
+      <a href="#services" onclick="toggleMenu()">Services</a>
+      <a href="#founder" onclick="toggleMenu()">Founder</a>
+      <a href="#mission" onclick="toggleMenu()">Mission</a>
+      <a href="#contact" onclick="toggleMenu()">Contact</a>
+      <a href="#contact" class="btn btn-cyber" style="margin-top: 1rem;" onclick="toggleMenu()">Get Started</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="orb orb-primary"></div>
+      <div class="orb orb-accent"></div>
+      <div class="orb orb-primary"></div>
+      <div class="hero-grid cyber-grid"></div>
+      
+      <div class="container hero-content">
+        <div class="animate-fade-in-up" style="opacity: 0;">
+          <div class="hero-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span class="font-mono">Cybersecurity & Cryptography</span>
+          </div>
+        </div>
+        
+        <h1 class="animate-fade-in-up delay-200" style="opacity: 0;">
+          Aerocrypt – <span class="text-gradient">Securing Digital Identity</span> Through Intelligent Cryptographic Systems
+        </h1>
+        
+        <p class="hero-subtitle animate-fade-in-up delay-400" style="opacity: 0;">
+          Advanced cybersecurity solutions focused on privacy, encryption, and innovation. Building the future of secure digital infrastructure.
+        </p>
+        
+        <div class="hero-buttons animate-fade-in-up delay-600" style="opacity: 0;">
+          <a href="#contact" class="btn btn-cyber">
+            Contact Us
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+      
+      <div class="hero-fade"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-glow"></div>
+      <div class="container" style="position: relative; z-index: 10;">
+        <div class="text-center">
+          <span class="section-label">About Us</span>
+          <h2 class="section-title">Building the Future of <span class="text-gradient">Digital Security</span></h2>
+          <p class="section-desc">
+            Aerocrypt is a cybersecurity and cryptography-focused organization dedicated to protecting digital ecosystems through innovative security solutions. We combine cutting-edge research with practical implementation to deliver secure, scalable, and intelligent systems.
+          </p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3>Privacy-First Approach</h3>
+            <p>Every solution is built with privacy at its core, ensuring data protection and user confidentiality.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </div>
+            <h3>Threat Intelligence</h3>
+            <p>Advanced monitoring and analysis to identify and neutralize threats before they materialize.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+              </svg>
+            </div>
+            <h3>Future-Ready Systems</h3>
+            <p>Scalable architectures designed to evolve with emerging technologies and security challenges.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Ethical Security</h3>
+            <p>Committed to responsible disclosure and ethical practices in all security operations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-bg">
+      <div class="cyber-grid" style="position: absolute; inset: 0; opacity: 0.2;"></div>
+      <div class="container" style="position: relative; z-index: 10;">
+        <div class="text-center">
+          <span class="section-label">What We Do</span>
+          <h2 class="section-title">Core <span class="text-gradient">Services</span></h2>
+          <p class="section-desc">
+            Comprehensive cybersecurity solutions tailored to protect your digital assets and infrastructure.
+          </p>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-glow"></div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h3>Cybersecurity Research</h3>
+            <p>In-depth research into emerging threats, vulnerabilities, and defense mechanisms to stay ahead of cyber adversaries.</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-glow"></div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>
+              </svg>
+            </div>
+            <h3>Cryptographic Systems</h3>
+            <p>Design and implementation of robust encryption protocols and cryptographic solutions for secure data transmission and storage.</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-glow"></div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3>Secure Application Development</h3>
+            <p>Building applications with security integrated from the ground up, following secure coding practices and rigorous testing.</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-glow"></div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"></path>
+                <path d="M16 14a4 4 0 0 0-8 0"></path>
+                <circle cx="12" cy="14" r="8"></circle>
+              </svg>
+            </div>
+            <h3>Privacy-Focused AI Solutions</h3>
+            <p>Developing AI systems that prioritize user privacy, implementing differential privacy and federated learning approaches.</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-glow"></div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"></path>
+                <circle cx="12" cy="14" r="4"></circle>
+                <line x1="12" y1="6" x2="12.01" y2="6"></line>
+              </svg>
+            </div>
+            <h3>Ethical Hacking & Threat Analysis</h3>
+            <p>Comprehensive penetration testing and vulnerability assessments to identify and remediate security weaknesses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder">
+      <div class="founder-orb-1"></div>
+      <div class="founder-orb-2"></div>
+      
+      <div class="container" style="position: relative; z-index: 10;">
+        <div class="text-center" style="margin-bottom: 4rem;">
+          <span class="section-label">Leadership</span>
+          <h2 class="section-title">Meet the <span class="text-gradient">Founder</span></h2>
+        </div>
+        
+        <div class="founder-card">
+          <div class="founder-inner">
+            <div class="founder-content">
+              <div class="founder-photo-wrapper">
+                <div class="founder-photo">
+                  <!-- Replace src with your actual image URL -->
+                  <img src="images/founder-athul-laiju.jpg" alt="Athul Laiju - Founder & CEO of Aerocrypt" />
+                </div>
+                <div class="founder-badge">
+                  <span>CEO</span>
+                </div>
+              </div>
+              
+              <div class="founder-info">
+                <h3>Athul Laiju</h3>
+                <p class="founder-title">Founder & Cybersecurity Engineer</p>
+                <p class="founder-bio">
+                  Athul Laiju is a cybersecurity engineer and founder of Aerocrypt. He specializes in ethical hacking, cryptography, secure systems design, and privacy-centric technology. With a strong background in computer science and cybersecurity, he focuses on building intelligent, secure, and scalable digital solutions. His expertise spans threat analysis, penetration testing, and developing next-generation security architectures.
+                </p>
+                
+                <div class="founder-social">
+                  <a href="#" class="social-link" aria-label="LinkedIn Profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </a>
+                  <a href="#" class="social-link" aria-label="Twitter Profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                    </svg>
+                  </a>
+                  <a href="mailto:contact@aerocrypt.io" class="social-link" aria-label="Email Contact">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section id="mission" class="section-bg">
+      <div class="cyber-grid" style="position: absolute; inset: 0; opacity: 0.1;"></div>
+      <div class="container" style="position: relative; z-index: 10;">
+        <div class="text-center">
+          <span class="section-label">Our Purpose</span>
+          <h2 class="section-title">Mission & <span class="text-gradient">Vision</span></h2>
+        </div>
+        
+        <div class="mission-grid">
+          <div class="mission-card">
+            <div class="mission-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h3>Our <span class="text-gradient">Mission</span></h3>
+            <p>To protect digital ecosystems through innovation and ethical security practices. We are committed to developing cutting-edge cryptographic solutions that safeguard privacy, ensure data integrity, and empower organizations to operate securely in an increasingly connected world.</p>
+          </div>
+          
+          <div class="mission-card">
+            <div class="mission-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <h3>Our <span class="text-gradient">Vision</span></h3>
+            <p>To become a globally trusted cybersecurity organization recognized for pioneering innovations in cryptography and digital protection. We envision a future where every individual and organization can interact digitally with complete confidence in the security and privacy of their data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact-orb-1"></div>
+      <div class="contact-orb-2"></div>
+      
+      <div class="container" style="position: relative; z-index: 10;">
+        <div class="text-center">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+          <p class="section-desc">
+            Ready to strengthen your digital security? Reach out to discuss how Aerocrypt can help protect your organization.
+          </p>
+        </div>
+        
+        <div class="contact-cards">
+          <a href="mailto:contact@aerocrypt.io" class="contact-card">
+            <div class="contact-card-inner">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3>Email Us</h3>
+                <p>contact@aerocrypt.io</p>
+              </div>
+            </div>
+          </a>
+          
+          <div class="contact-card">
+            <div class="contact-card-inner">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3>Location</h3>
+                <p>Remote-First Organization</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-social">
+          <p>Follow us on social media</p>
+          <div class="contact-social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="contact-social-link" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="contact-cta">
+          <a href="mailto:contact@aerocrypt.io" class="btn btn-cyber">
+            Start a Conversation
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <span class="logo-text">Aerocrypt</span>
+          </a>
+          <p class="footer-tagline">Securing digital identity through intelligent cryptographic systems.</p>
+        </div>
+        
+        <div class="footer-links">
+          <a href="#about" class="footer-link">About</a>
+          <a href="#services" class="footer-link">Services</a>
+          <a href="#founder" class="footer-link">Founder</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+        
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+            </svg>
+          </a>
+          <a href="mailto:contact@aerocrypt.io" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Aerocrypt. All rights reserved.</p>
+        <p class="font-mono">Built with security in mind.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('active');
+    }
+
+    // Close mobile menu on resize
+    window.addEventListener('resize', function() {
+      if (window.innerWidth >= 768) {
+        document.getElementById('mobileMenu').classList.remove('active');
+      }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
